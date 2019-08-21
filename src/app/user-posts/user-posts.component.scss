@@ -1,6 +1,14 @@
-tr:first-child {
-  td {
-    font-weight: bold;
-    font-size: 18px;
+table {
+  width: 100%;
+
+  &:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  tr:first-child {
+    td {
+      font-weight: bold;
+      font-size: 18px;
+    }
   }
 }
