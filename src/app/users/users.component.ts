@@ -9,14 +9,14 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent implements OnInit {
-  users;
+  users: object[];
 
 
   constructor(private _httpClient: HttpClient) {
   }
 
   ngOnInit() {
-    this._httpClient.get('https://jsonplaceholder.typicode.com/users').subscribe(res => {
+    this._httpClient.get('https://jsonplaceholder.typicode.com/users').subscribe((res: object[]) => {
       this.users = res;
     });
   }

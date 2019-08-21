@@ -10,7 +10,7 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./user-posts.component.scss']
 })
 export class UserPostsComponent implements OnInit {
-  userPosts: object[];
+  posts: object[];
 
 
   constructor(private _router: Router,
@@ -31,8 +31,8 @@ export class UserPostsComponent implements OnInit {
 
   private _fetchUserPosts() {
     this._httpClient.get(`https://jsonplaceholder.typicode.com/posts?userId=${this._getUserIdFromUrl}`).subscribe((res: object[]) => {
-      this.userPosts = res;
-      console.log(this.userPosts);
+      this.posts = res;
+      console.log(this.posts);
     });
   }
 }

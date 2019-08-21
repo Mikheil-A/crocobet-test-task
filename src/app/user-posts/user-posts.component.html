@@ -1,3 +1,19 @@
-<p>
-  user-posts works!
-</p>
+<div *ngIf="posts">
+  <table *ngFor="let post of posts; let i = index">
+    <tr>
+      <td>Post {{i + 1}}</td>
+    </tr>
+    <tr>
+      <td>ID:</td>
+      <td>{{post.id}}</td>
+    </tr>
+    <tr>
+      <td>Title:</td>
+      <td>{{post.title}}</td>
+    </tr>
+    <tr>
+      <td>Body:</td>
+      <td>{{post.body}}</td>
+    </tr>
+  </table>
+</div>

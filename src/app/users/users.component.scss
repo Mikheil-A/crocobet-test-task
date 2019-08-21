@@ -1,0 +1,20 @@
+#users-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .user {
+    padding: 20px 40px;
+    margin: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #607d8b;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: #607d8b;
+      background-color: #cfd8dc;
+    }
+  }
+}

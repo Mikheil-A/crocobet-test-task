@@ -1,5 +1,68 @@
 <div *ngIf="user">
-  <a routerLink="/user-posts/{{user.id}}" target="_blank">see posts</a>
+  <a routerLink="/user-posts/{{user.id}}" target="_blank">See posts</a>
 
-  <div>{{user.name}}</div>
+
+  <h2>General info:</h2>
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td>{{user.name}}</td>
+    </tr>
+    <tr>
+      <td>Phone:</td>
+      <td>{{user.phone}}</td>
+    </tr>
+    <tr>
+      <td>E-mail:</td>
+      <td>{{user.email}}</td>
+    </tr>
+    <tr>
+      <td>Username:</td>
+      <td>{{user.username}}</td>
+    </tr>
+    <tr>
+      <td>Website:</td>
+      <td>{{user.website}}</td>
+    </tr>
+  </table>
+
+  <h2>Address:</h2>
+  <table>
+    <tr>
+      <td>City:</td>
+      <td>{{user.address.city}}</td>
+    </tr>
+    <tr>
+      <td>Street:</td>
+      <td>{{user.address.street}}</td>
+    </tr>
+    <tr>
+      <td>Suite:</td>
+      <td>{{user.address.suite}}</td>
+    </tr>
+    <tr>
+      <td>Zipcode:</td>
+      <td>{{user.address.zipcode}}</td>
+    </tr>
+    <tr>
+      <td>Geo:</td>
+      <td>({{user.address.geo.lat}}, {{user.address.geo.lng}})</td>
+    </tr>
+  </table>
+
+  <h2>Company:</h2>
+  <table>
+    <tr>
+      <td>BS:</td>
+      <td>{{user.company.bs}}</td>
+    </tr>
+    <tr>
+      <td>Catch phrase:</td>
+      <td>{{user.company.catchPhrase}}</td>
+    </tr>
+    <tr>
+      <td>Name:</td>
+      <td>{{user.company.name}}</td>
+    </tr>
+  </table>
 </div>

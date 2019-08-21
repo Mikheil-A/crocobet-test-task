@@ -1,5 +1,6 @@
-<div *ngFor="let user of users">
-  <div>
-    <a routerLink="/user/{{user.id}}" [state]="{userInfo: user}">{{user.name}}</a>
-  </div>
+<div id="users-list-container">
+  <a *ngFor="let user of users"
+     routerLink="/user/{{user.id}}" [state]="{userInfo: user}"
+     class="user">
+    {{user.name}}</a>
 </div>
