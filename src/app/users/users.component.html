@@ -1,0 +1,5 @@
+<div *ngFor="let user of users">
+  <div>
+    <a routerLink="/user/{{user.id}}" [state]="{userInfo: user}">{{user.name}}</a>
+  </div>
+</div>
