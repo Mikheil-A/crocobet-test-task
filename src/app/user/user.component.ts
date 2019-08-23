@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 
 
@@ -11,11 +12,14 @@ export class UserComponent implements OnInit {
   user: object;
 
 
-  constructor() {
+  constructor(private _router: Router) {
   }
 
   ngOnInit() {
     this.user = window.history.state.userInfo;
-    console.log(this.user);
+
+    if (!this.user) {
+      this._router.navigate(['']);
+    }
   }
 }
