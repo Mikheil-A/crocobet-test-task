@@ -32,8 +32,8 @@ export class UserPostsComponent implements OnInit {
   private _fetchUserPosts() {
     this._httpClient.get(`https://jsonplaceholder.typicode.com/posts?userId=${this._getUserIdFromUrl}`)
       .subscribe((res: object[]) => {
-      this.posts = res;
-      console.log(this.posts);
-    });
+        this.posts = res;
+        console.log('posts: ', this.posts);
+      });
   }
 }

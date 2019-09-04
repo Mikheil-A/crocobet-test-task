@@ -18,7 +18,8 @@ export class UsersComponent implements OnInit {
   ngOnInit() {
     this._httpClient.get('https://jsonplaceholder.typicode.com/users')
       .subscribe((res: object[]) => {
-      this.users = res;
-    });
+        this.users = res;
+        console.log('users: ', this.users);
+      });
   }
 }

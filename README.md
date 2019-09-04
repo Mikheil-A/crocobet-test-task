@@ -1,6 +1,12 @@
-# CrocobetTestTask
+# Simple REST API Example using JSONPlaceholder
 
-Hosted on gh-pages: https://mikheil-a.github.io/crocobet-test-task/
+Hosted on gh-pages: https://mikheil-a.github.io/simple-REST-API-example/
+
+
+<!--
+crocobet-test-task, 21-Aug-2019
+-->
+
 
 
 <!--
